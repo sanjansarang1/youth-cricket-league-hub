@@ -22,21 +22,21 @@ const About = () => {
               <Trophy className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4">Excellence</h3>
               <p className="text-gray-600">
-                Striving for excellence in every aspect of cricket development.
+                ADD.
               </p>
             </div>
             <div className="text-center p-6">
               <Users className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4">Community</h3>
               <p className="text-gray-600">
-                Building a supportive community of young cricketers and their families.
+                ADD.
               </p>
             </div>
             <div className="text-center p-6">
               <Target className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4">Development</h3>
               <p className="text-gray-600">
-                Focusing on holistic development both on and off the field.
+                ADD.
               </p>
             </div>
           </div>
