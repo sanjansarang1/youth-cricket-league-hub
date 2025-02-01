@@ -53,10 +53,10 @@ const teams = [
     zone: "Brigeland HS",
   },
   {
-    name: "Rising Stars",
-    location: "West District",
-    founded: "2017",
-    ageGroup: "U-13",
+    name: "Seven Lakes Cricket Club",
+    logo: "/lovable-uploads/seven_logo.jpg",
+    district: "South Houston Division",
+    zone: "Seven Lakes High School",
   },
 ];
 
