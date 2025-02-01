@@ -51,7 +51,7 @@ const SponsorBar = () => {
   ];
 
   return (
-    <div className="bg-[#9b87f5] py-4 overflow-hidden">
+    <div className="bg-primary py-4 overflow-hidden">
       <div
         ref={scrollRef}
         className="flex space-x-8 overflow-x-hidden whitespace-nowrap px-4"

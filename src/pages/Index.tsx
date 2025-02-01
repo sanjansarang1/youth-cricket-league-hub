@@ -6,8 +6,15 @@ const Index = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary to-blue-600 text-white py-20">
+      <div className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 text-center">
+          <div className="flex justify-center mb-8">
+            <img
+              src="/lovable-uploads/b49efeda-bc97-4496-86dd-38c0bcdec7a8.png"
+              alt="YCPL Logo"
+              className="h-32 w-32"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Youth Cricket Premier League
           </h1>
@@ -17,7 +24,7 @@ const Index = () => {
           </p>
           <Link
             to="/teams"
-            className="inline-flex items-center bg-secondary hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+            className="inline-flex items-center bg-secondary hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg transition-colors"
           >
             View Teams <ArrowRight className="ml-2" />
           </Link>
@@ -27,7 +34,7 @@ const Index = () => {
       {/* Features Section */}
       <div className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12 text-primary">
             Why Choose YCPL?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -36,7 +43,7 @@ const Index = () => {
                 key={index}
                 className="p-6 bg-accent rounded-lg text-center hover:shadow-lg transition-shadow"
               >
-                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-primary">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
@@ -45,16 +52,16 @@ const Index = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gray-50 py-20">
+      <div className="bg-accent py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Join YCPL?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-primary">Ready to Join YCPL?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Take the first step towards cricket excellence. Learn more about our
             league and how to participate.
           </p>
           <Link
             to="/about"
-            className="inline-flex items-center bg-primary hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+            className="inline-flex items-center bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg transition-colors"
           >
             Learn More <ArrowRight className="ml-2" />
           </Link>
