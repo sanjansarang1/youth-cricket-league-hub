@@ -49,16 +49,13 @@ const About = () => {
           <h2 className="text-3xl font-bold text-center mb-8">Our History</h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-gray-600 mb-6">
-              Founded in 2015, YCPL has grown from a small local tournament to
-              become one of the premier youth cricket leagues in the region.
+              ADD HERE
             </p>
             <p className="text-gray-600 mb-6">
-              Over the years, we have helped numerous young cricketers develop
-              their skills and achieve their dreams of playing at higher levels.
+              ADD HERE
             </p>
             <p className="text-gray-600">
-              Today, YCPL continues to expand its reach and impact, providing
-              more opportunities for young cricketers to showcase their talent.
+              ADD HERE.
             </p>
           </div>
         </div>
