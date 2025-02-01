@@ -1,6 +1,5 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import SponsorBar from "../components/SponsorBar";
 
 const Index = () => {
   return (
@@ -10,7 +9,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="flex justify-center mb-8">
             <img
-              src="/lovable-uploads/b49efeda-bc97-4496-86dd-38c0bcdec7a8.png"
+              src="/lovable-uploads/93301242-636d-4b08-a893-3fbde73aee23.png"
               alt="YCPL Logo"
               className="h-32 w-32"
             />
@@ -31,11 +30,11 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Features Section */}
+      {/* Who We Are Section */}
       <div className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">
-            Why Choose YCPL?
+            Who We Are
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
@@ -67,28 +66,25 @@ const Index = () => {
           </Link>
         </div>
       </div>
-
-      {/* Sponsor Bar */}
-      <SponsorBar />
     </div>
   );
 };
 
 const features = [
   {
-    title: "Professional Coaching",
+    title: "Houston's Youth Cricket Hub",
     description:
-      "Learn from experienced coaches who have played at the highest level.",
+      "Based in Houston, we provide a platform for high school students and younger cricket enthusiasts to develop their skills and passion for the sport.",
   },
   {
-    title: "Competitive Matches",
+    title: "Tapeball Cricket Focus",
     description:
-      "Regular matches against top youth teams to develop your skills.",
+      "We organize exciting tapeball cricket matches, making the sport accessible and fun while fostering community engagement and healthy competition.",
   },
   {
-    title: "Development Focus",
+    title: "Community & Health",
     description:
-      "Emphasis on both technical skills and personal growth.",
+      "Beyond cricket, we build a strong community and promote physical fitness, teamwork, and healthy lifestyle choices among young players.",
   },
 ];
 
