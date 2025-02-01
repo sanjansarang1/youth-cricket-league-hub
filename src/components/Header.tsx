@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Users } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +10,7 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Teams", href: "/teams" },
+    { name: "Board", href: "/board", icon: Users },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -32,8 +33,9 @@ const Header = () => {
                   isActive(item.href)
                     ? "text-primary font-semibold"
                     : "text-gray-600 hover:text-primary"
-                } transition-colors`}
+                } transition-colors flex items-center gap-2`}
               >
+                {item.icon && <item.icon className="h-4 w-4" />}
                 {item.name}
               </Link>
             ))}
@@ -64,9 +66,10 @@ const Header = () => {
                   isActive(item.href)
                     ? "text-primary font-semibold"
                     : "text-gray-600"
-                } block py-2`}
+                } block py-2 flex items-center gap-2`}
                 onClick={() => setIsMenuOpen(false)}
               >
+                {item.icon && <item.icon className="h-4 w-4" />}
                 {item.name}
               </Link>
             ))}
