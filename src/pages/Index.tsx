@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import SponsorBar from "../components/SponsorBar";
 
 const Index = () => {
   return (
@@ -59,6 +60,9 @@ const Index = () => {
           </Link>
         </div>
       </div>
+
+      {/* Sponsor Bar */}
+      <SponsorBar />
     </div>
   );
 };
