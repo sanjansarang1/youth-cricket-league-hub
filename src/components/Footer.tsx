@@ -6,41 +6,41 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            <h3 className="text-base font-semibold text-gray-900 mb-4">
               Youth Cricket Premier League
             </h3>
-            <p className="text-gray-600">
+            <p className="text-sm text-gray-600">
               Add tagline
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">Quick Links</h4>
+            <h4 className="text-base font-semibold text-gray-900 mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-600 hover:text-primary">
+                <Link to="/" className="text-sm text-gray-600 hover:text-primary">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-600 hover:text-primary">
+                <Link to="/about" className="text-sm text-gray-600 hover:text-primary">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/teams" className="text-gray-600 hover:text-primary">
+                <Link to="/teams" className="text-sm text-gray-600 hover:text-primary">
                   Teams
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">Contact</h4>
-            <p className="text-gray-600">Email: youthcricketpremierleague8424@gmail.com</p>
-            <p className="text-gray-600">Instagram: @youthcricketpremierleague</p>
+            <h4 className="text-base font-semibold text-gray-900 mb-4">Contact</h4>
+            <p className="text-sm text-gray-600">Email: youthcricketpremierleague8424@gmail.com</p>
+            <p className="text-sm text-gray-600">Instagram: @youthcricketpremierleague</p>
           </div>
         </div>
         <div className="border-t border-gray-200 mt-8 pt-8 text-center">
-          <p className="text-gray-600">
+          <p className="text-sm text-gray-600">
             © {new Date().getFullYear()} Youth Cricket Premier League. All rights
             reserved.
           </p>
