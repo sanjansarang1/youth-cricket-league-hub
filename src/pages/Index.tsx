@@ -18,15 +18,24 @@ const Index = () => {
             Youth Cricket Premier League
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Empowering young cricketers to achieve their dreams through
-            competitive cricket.
+            Making the sport of cricket more accessible to students in the Greater Houston area.
           </p>
-          <Link
-            to="/teams"
-            className="inline-flex items-center bg-secondary hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg transition-colors"
-          >
-            View Teams <ArrowRight className="ml-2" />
-          </Link>
+          <div className="flex justify-center space-x-4">
+            <Link
+              to="/teams"
+              className="inline-flex items-center bg-secondary hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg transition-colors"
+            >
+              View Teams <ArrowRight className="ml-2" />
+            </Link>
+            <a
+              href="https://forms.gle/zsTi7BLGQQBhngiJ9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-secondary hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg transition-colors"
+            >
+              Join Now <ArrowRight className="ml-2" />
+            </a>
+          </div>
         </div>
       </div>
 
