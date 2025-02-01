@@ -10,7 +10,7 @@ const Footer = () => {
               Youth Cricket Premier League
             </h3>
             <p className="text-gray-600">
-              Nurturing young cricket talent and fostering sportsmanship.
+              Add tagline
             </p>
           </div>
           <div>
@@ -35,8 +35,8 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="text-lg font-semibold text-gray-900 mb-4">Contact</h4>
-            <p className="text-gray-600">Email: info@ycpl.com</p>
-            <p className="text-gray-600">Phone: (555) 123-4567</p>
+            <p className="text-gray-600">Email: youthcricketpremierleague8424@gmail.com</p>
+            <p className="text-gray-600">Instagram: @youthcricketpremierleague</p>
           </div>
         </div>
         <div className="border-t border-gray-200 mt-8 pt-8 text-center">
