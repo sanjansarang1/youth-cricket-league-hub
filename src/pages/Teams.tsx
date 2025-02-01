@@ -48,7 +48,7 @@ const teams = [
   },
   {
     name: "Houston Titans",
-    logo: "/lovable-uploads/titans_logo.png",
+    logo: "/lovable-uploads/titans_logo.jpg",
     district: "North Houston District",
     zone: "Brigeland HS",
   },
