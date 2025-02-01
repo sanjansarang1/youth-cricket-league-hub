@@ -20,13 +20,14 @@ const Teams = () => {
                 key={index}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="h-48 bg-gray-200"></div>
+                <div className="h-48 bg-gray-200 flex justify-center items-center">
+                  <img src={team.logo} alt={`${team.name} Logo`} className="h-full w-auto" />
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{team.name}</h3>
-                  <p className="text-gray-600 mb-4">{team.location}</p>
+                  <p className="text-gray-600 mb-4">{team.district}</p>
                   <div className="flex justify-between text-sm text-gray-500">
-                    <span>Founded: {team.founded}</span>
-                    <span>Age Group: {team.ageGroup}</span>
+                    <span>Zone: {team.zone}</span>
                   </div>
                 </div>
               </div>
@@ -40,38 +41,20 @@ const Teams = () => {
 
 const teams = [
   {
-    name: "Young Tigers",
-    location: "East District",
-    founded: "2018",
-    ageGroup: "U-15",
+    name: "Texas Royals",
+    logo: "/lovable-uploads/royals_logo.png",
+    district: "North Houston District",
+    zone: "TWHS and TWCP",
+  },
+  {
+    name: "Houston Titans",
+    logo: "/lovable-uploads/royals_logo.png",
+    district: "North Houston District",
+    zone: "Brigeland HS",
   },
   {
     name: "Rising Stars",
     location: "West District",
-    founded: "2017",
-    ageGroup: "U-13",
-  },
-  {
-    name: "Junior Knights",
-    location: "North District",
-    founded: "2019",
-    ageGroup: "U-15",
-  },
-  {
-    name: "Royal Cubs",
-    location: "South District",
-    founded: "2016",
-    ageGroup: "U-13",
-  },
-  {
-    name: "Thunder Youth",
-    location: "Central District",
-    founded: "2018",
-    ageGroup: "U-15",
-  },
-  {
-    name: "Young Warriors",
-    location: "Lake District",
     founded: "2017",
     ageGroup: "U-13",
   },
