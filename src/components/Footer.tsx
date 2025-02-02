@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="text-base font-semibold text-gray-900 mb-4">Contact</h4>
-            <p className="text-sm text-gray-600">Email: youthcricketpremierleague8424@gmail.com</p>
+            <p className="text-sm text-gray-600">Email: contact@ycpl.com</p>
             <p className="text-sm text-gray-600">Instagram: @youthcricketpremierleague</p>
           </div>
         </div>
