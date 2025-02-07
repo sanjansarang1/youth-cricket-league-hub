@@ -79,7 +79,6 @@ const boardMembers = [
     role: "Outreach Team",
     photo: "/lovable-uploads/uvanuv.png",
   },
-    },
     {
     name: "Aarish Handa",
     role: "Outreach Team",
