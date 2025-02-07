@@ -4,7 +4,7 @@ import { Trophy, Users, Target } from "lucide-react";
 const About = () => {
   return (
     <div className="animate-fade-in">
-      {/* Hero Section */}
+      {/* Hero Section with Fade In */}
       <div className="bg-accent py-16 transform transition-all hover:scale-[1.02] duration-300">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-6 animate-fade-in">About YCPL</h1>
@@ -14,7 +14,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Mission Section */}
+      {/* Mission Section with Hover Effects */}
       <div className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -43,7 +43,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* History & Future Section */}
+      {/* History & Future Section with Scale Effects */}
       <div className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto space-y-12">
