@@ -5,11 +5,11 @@ const About = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <div className="bg-accent py-16">
+      <div className="bg-accent py-16 transform transition-all hover:scale-[1.02] duration-300">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-6">About YCPL</h1>
-          <p className="text-xl text-center text-gray-600 max-w-3xl mx-auto">
-            The Youth Cricket Premier League is dedicated to developing the sport of cricket and increasing its accessibility across Texas.
+          <h1 className="text-4xl font-bold text-center mb-6 animate-fade-in">About YCPL</h1>
+          <p className="text-xl text-center text-gray-600 max-w-2xl mx-auto">
+            Founded in 2024, the Youth Cricket Premier League brings organized cricket to youth across Texas, fostering community and excellence through the sport.
           </p>
         </div>
       </div>
@@ -18,60 +18,48 @@ const About = () => {
       <div className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
-              <Trophy className="w-12 h-12 text-primary mx-auto mb-4" />
+            <div className="text-center p-6 transform transition-all hover:scale-105 duration-300 bg-white rounded-lg shadow-lg">
+              <Trophy className="w-12 h-12 text-primary mx-auto mb-4 animate-bounce" />
               <h3 className="text-xl font-semibold mb-4">Excellence</h3>
               <p className="text-gray-600">
-                Promoting cricket excellence through organized tournaments and structured league formats across the Greater Houston Area.
+                Organizing structured tournaments and leagues across Greater Houston to promote cricket excellence.
               </p>
             </div>
-            <div className="text-center p-6">
-              <Users className="w-12 h-12 text-primary mx-auto mb-4" />
+            <div className="text-center p-6 transform transition-all hover:scale-105 duration-300 bg-white rounded-lg shadow-lg">
+              <Users className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
               <h3 className="text-xl font-semibold mb-4">Community</h3>
               <p className="text-gray-600">
-                Building a vibrant cricket community involving 12 schools and over 100 players from various school districts.
+                Uniting 12 schools and 100+ players from diverse backgrounds through cricket.
               </p>
             </div>
-            <div className="text-center p-6">
-              <Target className="w-12 h-12 text-primary mx-auto mb-4" />
+            <div className="text-center p-6 transform transition-all hover:scale-105 duration-300 bg-white rounded-lg shadow-lg">
+              <Target className="w-12 h-12 text-primary mx-auto mb-4 animate-bounce" />
               <h3 className="text-xl font-semibold mb-4">Development</h3>
               <p className="text-gray-600">
-                Fostering the growth of cricket among youth aged 12-18, welcoming players of all skill levels.
+                Creating opportunities for youth aged 12-18 to learn and excel in cricket.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* History Section */}
+      {/* History & Future Section */}
       <div className="bg-white py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Our History</h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-gray-600 mb-6">
-              Founded in August 2024, YCPL emerged from the vision of three passionate cricket enthusiasts: Sanjan Sarang, Siddharth Jain, and Ashutosh Sahu. As founders of the Texas Royals youth team in July 2022, they recognized the need for organized cricket competitions in the region.
-            </p>
-            <p className="text-gray-600 mb-6">
-              Today, YCPL operates across the Greater Houston Area, encompassing schools in Conroe, Tomball, Katy, Fort Bend, Cypress-Fairbanks, and Klein ISDs, along with various private schools. Our diverse community includes both novice players and experienced cricketers with up to 10 years of playing experience.
-            </p>
-            <p className="text-gray-600 mb-6">
-              Safety and inclusivity are our top priorities. We mandate proper protective equipment including gloves and abdomen guards, with qualified umpires present at every match. To minimize injury risks, we utilize tape balls during matches and practices as a safer alternative to traditional leather balls.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Future Growth Section */}
-      <div className="bg-accent py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Future Growth</h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-gray-600 mb-6">
-              YCPL is committed to expanding cricket's reach through innovative initiatives including summer camps designed to introduce new players to the sport. We're actively establishing additional teams in Northern Houston to improve match accessibility and reduce travel distances.
-            </p>
-            <p className="text-gray-600">
-              Following the successful 2024 Men's T20 World Cup hosted by the United States and West Indies, YCPL aims to expand its presence beyond Houston into Dallas, Austin, and San Antonio, creating a comprehensive Texas-wide cricket network for youth players.
-            </p>
+          <div className="max-w-3xl mx-auto space-y-12">
+            <div className="transform transition-all hover:scale-[1.02] duration-300 bg-accent rounded-xl p-8">
+              <h2 className="text-3xl font-bold text-center mb-6">Our Journey</h2>
+              <p className="text-gray-600">
+                Started by three cricket enthusiasts in 2024, YCPL has grown from a single team into a thriving league spanning multiple school districts. We prioritize safety with proper equipment and qualified umpires, making cricket accessible to players of all skill levels.
+              </p>
+            </div>
+            
+            <div className="transform transition-all hover:scale-[1.02] duration-300 bg-accent rounded-xl p-8">
+              <h2 className="text-3xl font-bold text-center mb-6">Looking Forward</h2>
+              <p className="text-gray-600">
+                Following the 2024 T20 World Cup's success, we're expanding through summer camps and new teams across Texas, building a comprehensive youth cricket network in Dallas, Austin, and San Antonio.
+              </p>
+            </div>
           </div>
         </div>
       </div>
