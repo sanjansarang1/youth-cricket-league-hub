@@ -10,7 +10,7 @@ const Footer = () => {
               Youth Cricket Premier League
             </h3>
             <p className="text-sm text-gray-600">
-              Add tagline
+              Expanding the Game, Strengthening Community, Inspiring Play
             </p>
           </div>
           <div>
