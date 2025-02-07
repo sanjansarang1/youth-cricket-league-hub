@@ -1,5 +1,5 @@
 
-import { Trophy, Users, Target } from "lucide-react";
+import { GraduationCap, Users, Globe } from "lucide-react";
 
 const About = () => {
   return (
@@ -19,10 +19,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="opacity-0 animate-fade-in [animation-delay:200ms] [animation-fill-mode:forwards] text-center p-6 transform transition-all hover:scale-105 duration-300 bg-white rounded-lg shadow-lg">
-              <Trophy className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4">Excellence</h3>
+              <GraduationCap className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4">Education</h3>
               <p className="text-gray-600">
-                Organizing structured tournaments and leagues across Greater Houston to promote cricket excellence.
+                Providing structured coaching and training programs to develop young cricketers from beginner to advanced levels.
               </p>
             </div>
             <div className="opacity-0 animate-fade-in [animation-delay:400ms] [animation-fill-mode:forwards] text-center p-6 transform transition-all hover:scale-105 duration-300 bg-white rounded-lg shadow-lg">
@@ -33,10 +33,10 @@ const About = () => {
               </p>
             </div>
             <div className="opacity-0 animate-fade-in [animation-delay:600ms] [animation-fill-mode:forwards] text-center p-6 transform transition-all hover:scale-105 duration-300 bg-white rounded-lg shadow-lg">
-              <Target className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4">Development</h3>
+              <Globe className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4">Accessibility</h3>
               <p className="text-gray-600">
-                Creating opportunities for youth aged 12-18 to learn and excel in cricket.
+                Making cricket accessible to all youth by providing equipment, resources, and inclusive programs across Texas.
               </p>
             </div>
           </div>
