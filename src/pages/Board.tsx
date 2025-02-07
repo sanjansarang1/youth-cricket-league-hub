@@ -44,6 +44,58 @@ const boardMembers = [
     role: "Co-Chairman",
     photo: "/lovable-uploads/sanjan.png",
   },
+  {
+    name: "Ashutosh Sahu",
+    role: "Co-Chairman",
+    photo: "/lovable-uploads/ash.png",
+  },
+    {
+    name: "Siddharth Jain",
+    role: "Co-Chairman",
+    photo: "/lovable-uploads/sid.png",
+  },
+  {
+    name: "Aryan Khandelwal",
+    role: "Director of Competition",
+    photo: "/lovable-uploads/aryan.png",
+  },
+    {
+    name: "Krushal Panda",
+    role: "Director of Outreach",
+    photo: "/lovable-uploads/krushal.png",
+  },
+  {
+    name: "Saikarthik Swaminathan",
+    role: "Houston Director",
+    photo: "/lovable-uploads/sai.png",
+  },
+    {
+    name: "Satvik Maggavi",
+    role: "Director of Fair Play",
+    photo: "/lovable-uploads/satvik.png",
+  },
+  {
+    name: "Uvanuv Vishnu",
+    role: "Outreach Team",
+    photo: "/lovable-uploads/uvanuv.png",
+  },
+    },
+    {
+    name: "Aarish Handa",
+    role: "Outreach Team",
+    photo: "/lovable-uploads/aarish.png",
+  },
+  {
+    name: "Deva Harsha Tanneru",
+    role: "North Houston Division Director",
+    photo: "",
+  },
+    {
+    name: "Chinmay Shastri",
+    role: "South Houston Division Director",
+    photo: "/lovable-uploads/chinmay.png",
+  },
+  
   // Add other board members here
 ];
 
