@@ -22,14 +22,14 @@ const About = () => {
               <GraduationCap className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4">Education</h3>
               <p className="text-gray-600">
-                Providing structured coaching and training programs to develop young cricketers from beginner to advanced levels.
+                Growing the increasingly popular sport of cricket among high school students.
               </p>
             </div>
             <div className="opacity-0 animate-fade-in [animation-delay:400ms] [animation-fill-mode:forwards] text-center p-6 transform transition-all hover:scale-105 duration-300 bg-white rounded-lg shadow-lg">
               <Users className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-4">Community</h3>
               <p className="text-gray-600">
-                Uniting 12 schools and 100+ players from diverse backgrounds through cricket.
+                Uniting 12 schools and 100+ players from diverse backgrounds through cricket, developing a sense of community and involvement.
               </p>
             </div>
             <div className="opacity-0 animate-fade-in [animation-delay:600ms] [animation-fill-mode:forwards] text-center p-6 transform transition-all hover:scale-105 duration-300 bg-white rounded-lg shadow-lg">
