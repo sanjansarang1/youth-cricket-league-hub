@@ -1,9 +1,7 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
-import { Logos3 } from "../components/blocks/logos3";
 
 const Index = () => {
   return (
@@ -14,9 +12,6 @@ const Index = () => {
         title1="Making Cricket"
         title2="More Accessible"
       />
-
-      {/* Sponsors Section */}
-      <Logos3 heading="Our Sponsors" />
 
       {/* Who We Are Section */}
       <div className="py-20 bg-white">
