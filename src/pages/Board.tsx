@@ -87,7 +87,7 @@ const boardMembers = [
   {
     name: "Deva Harsha Tanneru",
     role: "North Houston Division Director",
-    photo: "",
+    photo: "/lovable-uploads/deva.png",
   },
     {
     name: "Chinmay Shastri",
