@@ -2,8 +2,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Circle } from "lucide-react";
+import { Circle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { RainbowButton } from "./rainbow-button";
 
 function ElegantShape({
     className,
