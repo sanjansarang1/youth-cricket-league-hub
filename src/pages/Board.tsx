@@ -64,11 +64,6 @@ const boardMembers = [
     role: "Director of Outreach",
     photo: "/lovable-uploads/krushal.png",
   },
-  {
-    name: "Saikarthik Swaminathan",
-    role: "Houston Director",
-    photo: "/lovable-uploads/sai.png",
-  },
     {
     name: "Satvik Maggavi",
     role: "Director of Fair Play",
