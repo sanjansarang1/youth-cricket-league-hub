@@ -2,44 +2,17 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
+import { HeroGeometric } from "../components/ui/shape-landing-hero";
 
 const Index = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <div className="bg-primary text-white py-20">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center mb-8">
-            <img
-              src="/lovable-uploads/93301242-636d-4b08-a893-3fbde73aee23.png"
-              alt="YCPL Logo"
-              className="h-32 w-32"
-            />
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Youth Cricket Premier League
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Making the sport of cricket more accessible to students in the Greater Houston area.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <Link to="/teams">
-              <RainbowButton className="inline-flex items-center">
-                View Teams <ArrowRight className="ml-2" />
-              </RainbowButton>
-            </Link>
-            <a
-              href="https://forms.gle/zsTi7BLGQQBhngiJ9"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <RainbowButton className="inline-flex items-center">
-                Join Now <ArrowRight className="ml-2" />
-              </RainbowButton>
-            </a>
-          </div>
-        </div>
-      </div>
+      <HeroGeometric 
+        badge="Youth Cricket Premier League"
+        title1="Making Cricket"
+        title2="More Accessible"
+      />
 
       {/* Who We Are Section */}
       <div className="py-20 bg-white">
@@ -70,7 +43,7 @@ const Index = () => {
             league and how to participate.
           </p>
           <Link to="/about">
-            <RainbowButton className="inline-flex items-center">
+            <RainbowButton className="inline-flex items-center bg-white text-primary">
               Learn More <ArrowRight className="ml-2" />
             </RainbowButton>
           </Link>
