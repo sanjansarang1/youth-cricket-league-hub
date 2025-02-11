@@ -3,6 +3,24 @@ import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
 
+const features = [
+  {
+    title: "Houston's Youth Cricket Hub",
+    description:
+      "Based in Houston, we provide a platform for high school students and younger cricket enthusiasts to develop their skills and passion for the sport.",
+  },
+  {
+    title: "Tapeball Cricket Focus",
+    description:
+      "We organize exciting tapeball cricket matches, making the sport accessible and fun while fostering community engagement and healthy competition.",
+  },
+  {
+    title: "Community & Health",
+    description:
+      "Beyond cricket, we build a strong community and promote physical fitness, teamwork, and healthy lifestyle choices among young players.",
+  },
+];
+
 const Index = () => {
   return (
     <div className="animate-fade-in">
@@ -51,23 +69,5 @@ const Index = () => {
     </div>
   );
 };
-
-const features = [
-  {
-    title: "Houston's Youth Cricket Hub",
-    description:
-      "Based in Houston, we provide a platform for high school students and younger cricket enthusiasts to develop their skills and passion for the sport.",
-  },
-  {
-    title: "Tapeball Cricket Focus",
-    description:
-      "We organize exciting tapeball cricket matches, making the sport accessible and fun while fostering community engagement and healthy competition.",
-  },
-  {
-    title: "Community & Health",
-    description:
-      "Beyond cricket, we build a strong community and promote physical fitness, teamwork, and healthy lifestyle choices among young players.",
-  },
-];
 
 export default Index;
