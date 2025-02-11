@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,32 +26,42 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#0A2156", // Navy blue from the logo
+          DEFAULT: "#0A2156",
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#FFFFFF", // White from the logo
+          DEFAULT: "#FFFFFF",
           foreground: "#0A2156",
         },
         accent: {
-          DEFAULT: "#F0F4FF", // Light blue accent
+          DEFAULT: "#F0F4FF",
           foreground: "#0A2156",
         },
         muted: {
           DEFAULT: "#F4F4F5",
           foreground: "#71717A",
         },
+        "color-1": "hsl(var(--color-1))",
+        "color-2": "hsl(var(--color-2))",
+        "color-3": "hsl(var(--color-3))",
+        "color-4": "hsl(var(--color-4))",
+        "color-5": "hsl(var(--color-5))",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
+        rainbow: "rainbow var(--speed, 2s) infinite linear",
       },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        rainbow: {
+          "0%": { "background-position": "0%" },
+          "100%": { "background-position": "200%" },
         },
       },
     },

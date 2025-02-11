@@ -1,5 +1,7 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { RainbowButton } from "../components/ui/rainbow-button";
 
 const Index = () => {
   return (
@@ -21,19 +23,19 @@ const Index = () => {
             Making the sport of cricket more accessible to students in the Greater Houston area.
           </p>
           <div className="flex justify-center space-x-4">
-            <Link
-              to="/teams"
-              className="inline-flex items-center bg-secondary hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg transition-colors"
-            >
-              View Teams <ArrowRight className="ml-2" />
+            <Link to="/teams">
+              <RainbowButton className="inline-flex items-center">
+                View Teams <ArrowRight className="ml-2" />
+              </RainbowButton>
             </Link>
             <a
               href="https://forms.gle/zsTi7BLGQQBhngiJ9"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-secondary hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg transition-colors"
             >
-              Join Now <ArrowRight className="ml-2" />
+              <RainbowButton className="inline-flex items-center">
+                Join Now <ArrowRight className="ml-2" />
+              </RainbowButton>
             </a>
           </div>
         </div>
@@ -67,11 +69,10 @@ const Index = () => {
             Take the first step towards cricket excellence. Learn more about our
             league and how to participate.
           </p>
-          <Link
-            to="/about"
-            className="inline-flex items-center bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg transition-colors"
-          >
-            Learn More <ArrowRight className="ml-2" />
+          <Link to="/about">
+            <RainbowButton className="inline-flex items-center">
+              Learn More <ArrowRight className="ml-2" />
+            </RainbowButton>
           </Link>
         </div>
       </div>
