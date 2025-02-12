@@ -1,3 +1,7 @@
+
+import { Trophy } from "lucide-react";
+import DisplayCards from "@/components/ui/display-cards";
+
 const Teams = () => {
   return (
     <div className="animate-fade-in">
@@ -14,22 +18,20 @@ const Teams = () => {
       {/* Teams Grid */}
       <div className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teams.map((team, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                <div className="h-48 bg-gray-200 flex justify-center items-center">
-                  <img src={team.logo} alt={`${team.name} Logo`} className="h-full w-auto" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{team.name}</h3>
-                  <p className="text-gray-600 mb-4">{team.district}</p>
-                  <div className="flex justify-between text-sm text-gray-500">
-                    <span>Zone: {team.zone}</span>
-                  </div>
-                </div>
+          <div className="flex flex-wrap justify-center gap-16">
+            {teams.map((group, groupIndex) => (
+              <div key={groupIndex} className="w-full max-w-3xl">
+                <DisplayCards
+                  cards={group.map((team, index) => ({
+                    icon: <Trophy className="size-4 text-yellow-300" />,
+                    title: team.name,
+                    description: team.district,
+                    date: `Zone: ${team.zone}`,
+                    iconClassName: "text-yellow-500",
+                    titleClassName: "text-primary",
+                    className: getCardStyle(index),
+                  }))}
+                />
               </div>
             ))}
           </div>
@@ -39,25 +41,38 @@ const Teams = () => {
   );
 };
 
+// Helper function to get card styles based on position
+const getCardStyle = (index: number) => {
+  const styles = [
+    "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
+    "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
+    "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",
+  ];
+  return styles[index] || styles[0];
+};
+
+// Group teams into sets of 3 for the stacked card effect
 const teams = [
-  {
-    name: "Texas Royals",
-    logo: "/lovable-uploads/royals_logo.png",
-    district: "North Houston District",
-    zone: "TWHS and TWCP",
-  },
-  {
-    name: "Houston Titans",
-    logo: "/lovable-uploads/titans_logo.jpg",
-    district: "North Houston District",
-    zone: "Brigeland HS",
-  },
-  {
-    name: "Seven Lakes Cricket Club",
-    logo: "/lovable-uploads/seven_logo.jpg",
-    district: "South Houston Division",
-    zone: "Seven Lakes High School",
-  },
+  [
+    {
+      name: "Texas Royals",
+      logo: "/lovable-uploads/royals_logo.png",
+      district: "North Houston District",
+      zone: "TWHS and TWCP",
+    },
+    {
+      name: "Houston Titans",
+      logo: "/lovable-uploads/titans_logo.jpg",
+      district: "North Houston District",
+      zone: "Brigeland HS",
+    },
+    {
+      name: "Seven Lakes Cricket Club",
+      logo: "/lovable-uploads/seven_logo.jpg",
+      district: "South Houston Division",
+      zone: "Seven Lakes High School",
+    },
+  ],
 ];
 
 export default Teams;
