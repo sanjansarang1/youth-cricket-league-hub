@@ -1,5 +1,4 @@
 
-import { Trophy } from "lucide-react";
 import DisplayCards from "@/components/ui/display-cards";
 
 const Teams = () => {
@@ -23,11 +22,17 @@ const Teams = () => {
               <div key={groupIndex} className="w-full max-w-3xl">
                 <DisplayCards
                   cards={group.map((team, index) => ({
-                    icon: <Trophy className="size-4 text-yellow-300" />,
+                    icon: (
+                      <img
+                        src={team.logo}
+                        alt={`${team.name} logo`}
+                        className="size-4 object-contain"
+                      />
+                    ),
                     title: team.name,
                     description: team.district,
                     date: `Zone: ${team.zone}`,
-                    iconClassName: "text-yellow-500",
+                    iconClassName: "bg-white",
                     titleClassName: "text-primary",
                     className: getCardStyle(index),
                   }))}
