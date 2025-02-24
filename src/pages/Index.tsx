@@ -1,7 +1,10 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
+import { Card, CardContent } from "../components/ui/card";
+import { LogoCarousel } from "../components/ui/logo-carousel";
 
 const features = [
   {
@@ -21,6 +24,12 @@ const features = [
   },
 ];
 
+const sponsorLogos = [
+  { id: 1, name: "Sponsor 1", src: "/lovable-uploads/royals_logo.png" },
+  { id: 2, name: "Sponsor 2", src: "/lovable-uploads/titans_logo.jpg" },
+  { id: 3, name: "Sponsor 3", src: "/lovable-uploads/seven_logo.jpg" },
+];
+
 const Index = () => {
   return (
     <div className="animate-fade-in">
@@ -30,6 +39,23 @@ const Index = () => {
         title1="Making Cricket"
         title2="More Accessible"
       />
+
+      {/* Sponsors Section */}
+      <div className="py-16 bg-white">
+        <Card className="max-w-5xl mx-auto">
+          <CardContent className="pt-6">
+            <div className="text-center space-y-4 mb-12">
+              <p className="text-sm font-medium tracking-widest text-muted-foreground">
+                PROUD PARTNERS & SUPPORTERS
+              </p>
+              <h2 className="text-3xl font-bold tracking-tight">
+                Supporting Youth Cricket Excellence
+              </h2>
+            </div>
+            <LogoCarousel logos={sponsorLogos} columns={3} />
+          </CardContent>
+        </Card>
+      </div>
 
       {/* Who We Are Section */}
       <div className="py-20 bg-white">
