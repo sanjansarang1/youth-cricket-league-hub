@@ -12,11 +12,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === "development" && componentTagger({
-      // Latest configuration options for the tagger
-      enableDebug: true,
-      enableConsoleWarnings: true,
-    }),
+    mode === "development" && componentTagger,
   ].filter(Boolean),
   resolve: {
     alias: {
@@ -24,4 +20,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-
