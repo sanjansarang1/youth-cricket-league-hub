@@ -32,19 +32,19 @@ const sponsorLogos = [
   },
   { 
     id: 2, 
-    name: "YCPL Logo", 
+    name: "YCPLLogo", 
     src: "/lovable-uploads/33b9ec1e-1d13-4d40-8409-1ad094805986.png",
     href: "https://ycpl.org/"
   },
   { 
     id: 3, 
-    name: "Brain Shield", 
+    name: "InGenius", 
     src: "/lovable-uploads/b50443ea-556a-43b3-91c4-7052c4d6d500.png",
     href: "https://hubs.la/Q036G_c20"
   },
   { 
     id: 4, 
-    name: "Sports Logo", 
+    name: "SQUAD", 
     src: "/lovable-uploads/9648132b-38ae-48be-9167-79f1bcd93140.png",
     href: "https://ycpl.org/"
   }
