@@ -72,7 +72,7 @@ const Index = () => {
                 Supporting Youth Cricket Excellence
               </h2>
             </div>
-            <LogoCarousel logos={sponsorLogos} columns={4} />
+            <LogoCarousel logos={sponsorLogos} columns={2} />
           </CardContent>
         </Card>
       </div>
