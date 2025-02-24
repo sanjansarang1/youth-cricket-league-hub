@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
@@ -25,9 +24,30 @@ const features = [
 ];
 
 const sponsorLogos = [
-  { id: 1, name: "Sponsor 1", src: "/lovable-uploads/royals_logo.png" },
-  { id: 2, name: "Sponsor 2", src: "/lovable-uploads/titans_logo.jpg" },
-  { id: 3, name: "Sponsor 3", src: "/lovable-uploads/seven_logo.jpg" },
+  { 
+    id: 1, 
+    name: "CricketerShop", 
+    src: "/lovable-uploads/0f34fc8f-81cc-4303-a854-a349338cccdd.png",
+    href: "https://cricketershop.com/"
+  },
+  { 
+    id: 2, 
+    name: "YCPL Logo", 
+    src: "/lovable-uploads/33b9ec1e-1d13-4d40-8409-1ad094805986.png",
+    href: "https://ycpl.org/"
+  },
+  { 
+    id: 3, 
+    name: "Brain Shield", 
+    src: "/lovable-uploads/b50443ea-556a-43b3-91c4-7052c4d6d500.png",
+    href: "https://hubs.la/Q036G_c20"
+  },
+  { 
+    id: 4, 
+    name: "Sports Logo", 
+    src: "/lovable-uploads/9648132b-38ae-48be-9167-79f1bcd93140.png",
+    href: "https://ycpl.org/"
+  }
 ];
 
 const Index = () => {
@@ -52,7 +72,7 @@ const Index = () => {
                 Supporting Youth Cricket Excellence
               </h2>
             </div>
-            <LogoCarousel logos={sponsorLogos} columns={3} />
+            <LogoCarousel logos={sponsorLogos} columns={4} />
           </CardContent>
         </Card>
       </div>

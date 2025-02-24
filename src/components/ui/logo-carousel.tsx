@@ -8,6 +8,7 @@ interface Logo {
   id: number;
   name: string;
   src: string;
+  href?: string;
 }
 
 interface LogoColumnProps {
@@ -54,11 +55,26 @@ function LogoColumn({ logos, columnIndex, currentTime }: LogoColumnProps) {
             transition: { duration: 0.3 },
           }}
         >
-          <img
-            src={currentLogo.src}
-            alt={currentLogo.name}
-            className="h-auto w-auto max-h-[80%] max-w-[80%] object-contain"
-          />
+          {currentLogo.href ? (
+            <a 
+              href={currentLogo.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-full h-full hover:opacity-80 transition-opacity"
+            >
+              <img
+                src={currentLogo.src}
+                alt={currentLogo.name}
+                className="h-auto w-auto max-h-[80%] max-w-[80%] object-contain"
+              />
+            </a>
+          ) : (
+            <img
+              src={currentLogo.src}
+              alt={currentLogo.name}
+              className="h-auto w-auto max-h-[80%] max-w-[80%] object-contain"
+            />
+          )}
         </motion.div>
       </AnimatePresence>
     </motion.div>
