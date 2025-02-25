@@ -28,13 +28,13 @@ const Logos3 = ({
   className,
 }: Logos3Props) => {
   return (
-    <section className={className}>
+    <section className={`w-full ${className}`}>
       {heading && (
         <div className="container flex flex-col items-center text-center">
           <h2 className="text-2xl font-bold lg:text-4xl">{heading}</h2>
         </div>
       )}
-      <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl">
+      <div className="relative w-full flex items-center justify-center">
         <Carousel
           opts={{
             loop: true,
@@ -50,6 +50,7 @@ const Logos3 = ({
               stopOnMouseEnter: true,
             }),
           ]}
+          className="w-full"
         >
           <CarouselContent className="ml-0">
             {logos.map((logo) => (
@@ -78,3 +79,4 @@ const Logos3 = ({
 };
 
 export { Logos3 };
+

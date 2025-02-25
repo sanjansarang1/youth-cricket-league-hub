@@ -3,7 +3,6 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
-import { Card, CardContent } from "../components/ui/card";
 import { Logos3 } from "../components/ui/logos3";
 
 const features = [
@@ -63,19 +62,15 @@ const Index = () => {
 
       {/* Sponsors Section */}
       <div className="py-16 bg-white">
-        <Card className="max-w-5xl mx-auto">
-          <CardContent className="pt-6">
-            <div className="text-center space-y-4 mb-12">
-              <p className="text-sm font-medium tracking-widest text-muted-foreground">
-                PROUD PARTNERS & SUPPORTERS
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight">
-                Supporting Youth Cricket Excellence
-              </h2>
-            </div>
-            <Logos3 logos={sponsorLogos} />
-          </CardContent>
-        </Card>
+        <div className="text-center space-y-4 mb-12">
+          <p className="text-sm font-medium tracking-widest text-muted-foreground">
+            PROUD PARTNERS & SUPPORTERS
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight">
+            Supporting Youth Cricket Excellence
+          </h2>
+        </div>
+        <Logos3 logos={sponsorLogos} />
       </div>
 
       {/* Who We Are Section */}
@@ -118,3 +113,4 @@ const Index = () => {
 };
 
 export default Index;
+
