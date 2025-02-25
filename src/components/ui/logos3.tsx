@@ -47,7 +47,6 @@ const Logos3 = ({
               playOnInit: true,
               speed: 0.5,
               stopOnInteraction: false,
-              stopOnMouseEnter: true,
             }),
           ]}
           className="w-full"
@@ -79,4 +78,3 @@ const Logos3 = ({
 };
 
 export { Logos3 };
-
