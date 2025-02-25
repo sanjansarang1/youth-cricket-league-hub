@@ -48,6 +48,12 @@ const sponsorLogos = [
     src: "/lovable-uploads/9648132b-38ae-48be-9167-79f1bcd93140.png",
     href: "https://apps.apple.com/us/app/squad-sports-matchmaker/id6624296404"
   }
+  {
+    id: 5,
+    name: "htw",
+    src: "/lovable-uploads/htw.png",
+    href: "https://www.woodlandshindutemple.org/youth/#"
+}
 ];
 
 const Index = () => {
