@@ -1,9 +1,10 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
 import { Card, CardContent } from "../components/ui/card";
-import { LogoCarousel } from "../components/ui/logo-carousel";
+import { Logos3 } from "../components/ui/logos3";
 
 const features = [
   {
@@ -72,7 +73,7 @@ const Index = () => {
                 Supporting Youth Cricket Excellence
               </h2>
             </div>
-            <LogoCarousel logos={sponsorLogos} columns={2} />
+            <Logos3 logos={sponsorLogos} />
           </CardContent>
         </Card>
       </div>
