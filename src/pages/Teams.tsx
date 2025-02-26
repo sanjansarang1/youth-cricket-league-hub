@@ -44,13 +44,13 @@ const teams = [
     name: "Texas Royals",
     logo: "/lovable-uploads/royals_logo.png",
     district: "North Houston District",
-    zone: "TWHS and TWCP",
+    zone: "Conroe ISD",
   },
   {
     name: "Houston Titans",
     logo: "/lovable-uploads/titans_logo.jpg",
     district: "North Houston District",
-    zone: "Brigeland HS",
+    zone: "Bridgeland Area",
   },
   {
     name: "Seven Lakes Cricket Club",
@@ -58,6 +58,18 @@ const teams = [
     district: "South Houston Division",
     zone: "Seven Lakes High School",
   },
+  {
+    name: "Carnegie Vanguard Cricket Club",
+    logo: "/lovable-uploads/cvhs.png",
+    district: "South Houston Division",
+    zone: "Carnegie Vanguard High School",
+  },
+  {
+    name: "Sugarland Missouri City Cricket Club",
+    logo: "/lovable-uploads/slmc.png",
+    district: "South Houston Division",
+    zone: "Sugarland Area",
+  }
 ];
 
 export default Teams;
