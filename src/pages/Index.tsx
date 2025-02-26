@@ -52,6 +52,12 @@ const sponsorLogos = [
     name: "htw",
     src: "/lovable-uploads/htw.png",
     href: "https://www.woodlandshindutemple.org/youth/#"
+  },
+  {
+    id: 6,
+    name: "ASU",
+    src: "/lovable-uploads/c381befc-0b5e-4add-9ffd-9f34655ec90f.png",
+    href: "https://academystudentunion.weebly.com/"
   }
 ];
 
