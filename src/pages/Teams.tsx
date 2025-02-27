@@ -72,7 +72,7 @@ const teams = [
   },
     {
     name: "Cy-Woods Cricket Club",
-    logo: "/lovable-uploads/cywoods.jpg",
+    logo: "/lovable-uploads/cywood.jpg",
     district: "North Houston Division",
     zone: "Cypress Woods High School",
   },
