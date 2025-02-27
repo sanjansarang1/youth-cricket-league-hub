@@ -43,14 +43,14 @@ const teams = [
   {
     name: "Texas Royals",
     logo: "/lovable-uploads/royals_logo.png",
-    district: "North Houston District",
+    district: "North Houston Division",
     zone: "Conroe ISD",
   },
   {
     name: "Houston Titans",
     logo: "/lovable-uploads/titans_logo.jpg",
-    district: "North Houston District",
-    zone: "Bridgeland Area",
+    district: "North Houston Division",
+    zone: "Katy Area",
   },
   {
     name: "Seven Lakes Cricket Club",
@@ -69,7 +69,32 @@ const teams = [
     logo: "/lovable-uploads/slmc.png",
     district: "South Houston Division",
     zone: "Sugarland Area",
-  }
+  },
+    {
+    name: "Cy-Woods Cricket Club",
+    logo: "/lovable-uploads/cywoods.jpg",
+    district: "North Houston Division",
+    zone: "Cypress Woods High School",
+  },
+  {
+    name: "Houston Ballers",
+    logo: "/lovable-uploads/ballers.jpg",
+    district: "North Houston Division",
+    zone: "John Cooper School",
+  },
+  {
+    name: "Bridgeland Cricket Club",
+    logo: "/lovable-uploads/bridgeland.png",
+    district: "North Houston Division",
+    zone: "Bridgeland High School",
+  },
+  {
+    name: "Tomball Memorial Cricket Club",
+    logo: "/lovable-uploads/tmhs.jpg",
+    district: "North Houston Division",
+    zone: "Tomball Area",
+  },
+  
 ];
 
 export default Teams;
