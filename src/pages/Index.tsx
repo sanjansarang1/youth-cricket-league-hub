@@ -31,9 +31,9 @@ const sponsorLogos = [
   },
   { 
     id: 2, 
-    name: "YCPLLogo", 
-    src: "/lovable-uploads/33b9ec1e-1d13-4d40-8409-1ad094805986.png",
-    href: "https://ycpl.org/"
+    name: "powerplay", 
+    src: "/lovable-uploads/powerplaylogo.png",
+    href: "https://powerplayindoorsports.com/"
   },
   { 
     id: 3, 
