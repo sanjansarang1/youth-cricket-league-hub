@@ -100,6 +100,12 @@ const teams = [
     district: "South Houston Division",
     zone: "Sugarland Area",
   },
+      {
+    name: "Obra D. Tompkins HS Cricket Club",
+    logo: "/lovable-uploads/oths.png",
+    district: "South Houston Division",
+    zone: "Obra D. Tompkins High School",
+  },
   
 ];
 
