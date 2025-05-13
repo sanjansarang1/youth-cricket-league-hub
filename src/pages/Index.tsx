@@ -61,6 +61,11 @@ const sponsorLogos = [
   }
 ];
 
+const stats = [
+  { value: "150+", label: "Players" },
+  { value: "12+", label: "Teams" },
+];
+
 const Index = () => {
   return (
     <div className="animate-fade-in">
@@ -82,6 +87,35 @@ const Index = () => {
           </h2>
         </div>
         <Logos3 logos={sponsorLogos} />
+      </div>
+
+      {/* Stats Section */}
+      <div className="py-20 bg-accent">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold text-primary">Our Impact by the Numbers</h2>
+              <div className="grid grid-cols-2 gap-8">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.value}</div>
+                    <div className="text-lg text-gray-600">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-gray-600 mt-4">
+                Growing Houston's cricket community one player at a time.
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="/lovable-uploads/65ace1b5-3c4d-44e2-bf86-1593875883a8.png" 
+                alt="YCPL Team" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Who We Are Section */}
