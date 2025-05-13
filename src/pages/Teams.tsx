@@ -94,6 +94,12 @@ const teams = [
     district: "North Houston Division",
     zone: "Tomball Area",
   },
+    {
+    name: "Houston Gladiators Cricket Club",
+    logo: "/lovable-uploads/hgc.png",
+    district: "South Houston Division",
+    zone: "Sugarland Area",
+  },
   
 ];
 
