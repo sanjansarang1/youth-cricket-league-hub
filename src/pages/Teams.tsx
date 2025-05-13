@@ -65,10 +65,10 @@ const teams = [
     zone: "Carnegie Vanguard High School",
   },
   {
-    name: "Sugarland Missouri City Cricket Club",
+    name: "Southwest Warriors Cricket Club",
     logo: "/lovable-uploads/slmc.png",
     district: "South Houston Division",
-    zone: "Sugarland Area",
+    zone: "Southwest Houston Area",
   },
     {
     name: "Cy-Woods Cricket Club",
