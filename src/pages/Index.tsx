@@ -6,6 +6,7 @@ import { RainbowButton } from "../components/ui/rainbow-button";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
 import { Logos3 } from "../components/ui/logos3";
 import { CountUp } from "../components/ui/count-up";
+import {ShineBorder} from "../components/ui/shine-border";
 
 const features = [
   {
@@ -116,7 +117,13 @@ const Index = () => {
                 Growing Houston's cricket community one player at a time.
               </p>
             </div>
-            <div className="rounded-lg overflow-hidden shadow-lg">
+            <ShineBorder
+              borderRadius={12}
+              borderWidth={2}
+              duration={12}
+              color={["#facc15", "#3b82f6"]}
+              className="overflow-hidden shadow-lg"
+              >
               <img 
                 src="/lovable-uploads/65ace1b5-3c4d-44e2-bf86-1593875883a8.png" 
                 alt="YCPL Team" 
