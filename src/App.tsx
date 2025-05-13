@@ -1,3 +1,4 @@
+
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
@@ -10,6 +11,7 @@ import About from "./pages/About";
 import Teams from "./pages/Teams";
 import Board from "./pages/Board";
 import AiChat from "./pages/AiChat";
+import Newsletters from "./pages/Newsletters";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +31,7 @@ const App = () => (
               <Route path="/teams" element={<Teams />} />
               <Route path="/board" element={<Board />} />
               <Route path="/ai" element={<AiChat />} />
+              <Route path="/newsletters" element={<Newsletters />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

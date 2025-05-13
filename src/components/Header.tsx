@@ -1,6 +1,7 @@
+
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Users, MessageSquare } from "lucide-react";
+import { Menu, X, Users, MessageSquare, FileText } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ const Header = () => {
     { name: "About", href: "/about" },
     { name: "Teams", href: "/teams" },
     { name: "Board", href: "/board", icon: Users },
+    { name: "Newsletters", href: "/newsletters", icon: FileText },
     { name: "AI Chat", href: "/ai", icon: MessageSquare },
   ];
 
