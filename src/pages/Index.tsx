@@ -1,8 +1,10 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
 import { Logos3 } from "../components/ui/logos3";
+import { CountUp } from "../components/ui/count-up";
 
 const features = [
   {
@@ -62,8 +64,8 @@ const sponsorLogos = [
 ];
 
 const stats = [
-  { value: "150+", label: "Players" },
-  { value: "12+", label: "Teams" },
+  { value: 150, label: "Players", suffix: "+" },
+  { value: 12, label: "Teams", suffix: "+" },
 ];
 
 const Index = () => {
@@ -98,7 +100,13 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-8">
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.value}</div>
+                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                      <CountUp 
+                        end={stat.value} 
+                        suffix={stat.suffix} 
+                        duration={1800}
+                      />
+                    </div>
                     <div className="text-lg text-gray-600">{stat.label}</div>
                   </div>
                 ))}
