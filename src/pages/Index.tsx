@@ -129,7 +129,7 @@ const Index = () => {
                 alt="YCPL Team" 
                 className="w-full h-auto object-cover"
               />
-            </div>
+            </ShineBorder>
           </div>
         </div>
       </div>
