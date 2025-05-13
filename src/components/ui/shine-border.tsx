@@ -188,4 +188,4 @@ const timeline = [
   },
 ];
 
-export { ShineBorder, Timeline }
+export { ShineBorder }
