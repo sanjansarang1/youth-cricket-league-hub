@@ -79,6 +79,11 @@ const boardMembers = [
     role: "Outreach Team",
     photo: "/lovable-uploads/aarish.png",
   },
+      {
+    name: "Saikarthik Swaminathan",
+    role: "Outreach Team",
+    photo: "/lovable-uploads/sai.png",
+  },
   {
     name: "Deva Harsha Tanneru",
     role: "North Houston Division Director",
