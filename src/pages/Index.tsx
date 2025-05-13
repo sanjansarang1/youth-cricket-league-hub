@@ -1,5 +1,6 @@
 
 
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RainbowButton } from "../components/ui/rainbow-button";
@@ -125,7 +126,7 @@ const Index = () => {
               className="overflow-hidden shadow-lg"
               >
               <img 
-                src="public/lovable-uploads/team_photo.png" 
+                src="/lovable-uploads/65ace1b5-3c4d-44e2-bf86-1593875883a8.png" 
                 alt="YCPL Team" 
                 className="w-full h-auto object-cover"
               />
