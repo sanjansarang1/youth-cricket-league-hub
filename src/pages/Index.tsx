@@ -125,7 +125,7 @@ const Index = () => {
               className="overflow-hidden shadow-lg"
               >
               <img 
-                src="/lovable-uploads/team_photo.png" 
+                src="public/lovable-uploads/team_photo.png" 
                 alt="YCPL Team" 
                 className="w-full h-auto object-cover"
               />
