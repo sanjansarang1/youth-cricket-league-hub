@@ -53,6 +53,18 @@ export default {
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
         rainbow: "rainbow var(--speed, 2s) infinite linear",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+        "shine-pulse": {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
+        },
       },
       keyframes: {
         fadeIn: {
@@ -62,6 +74,22 @@ export default {
         rainbow: {
           "0%": { "background-position": "0%" },
           "100%": { "background-position": "200%" },
+        },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
+        "shine-pulse": {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
         },
       },
     },
