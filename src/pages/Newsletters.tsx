@@ -27,7 +27,7 @@ const newsletters: Newsletter[] = [
     author: "Krushal Panda, Sanjan Sarang",
     date: "May 5, 2025",
     content:
-      "The YCPL has recently launched an exciting campaign to broaden its public presence through partnerships with local news outlets. This initiative has already seen success with the publication of an article in the Woodlands Online, a leading news source in The Woodlands, Texas.",
+      "The YCPL has recently launched an exciting campaign to broaden its public presence through partnerships with local news outlets. This initiative has already seen success with the publication of an article in the Woodlands Online, a leading news source in The Woodlands, Texas. Furthermore, YCPL's digital presence continues to grow. The Instagram page has seen significant engagement, with posts reaching over 1,300 accounts. These measurable gains demonstrate a commitment to expanding the reach and impact of youth cricket in the Houston area.",
     linkText: "Read the article on Woodlands Online",
     linkUrl: "https://www.woodlandsonline.com/npps/story.cfm?nppage=81431",
     image: "/lovable-uploads/65ace1b5-3c4d-44e2-bf86-1593875883a8.png",
