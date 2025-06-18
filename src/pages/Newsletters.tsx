@@ -15,11 +15,11 @@ interface Newsletter {
 const newsletters: Newsletter[] = [
   {
     id: "1",
-    title: "Summer Season Kickoff",
-    author: "YCPL Editorial Team",
+    title: "Exposure in the Local Media",
+    author: "Krushal Panda, Sanjan Sarang",
     date: "May 5, 2025",
-    content: "As summer approaches, we're excited to announce the start of our summer cricket season! Teams across the league are gearing up for what promises to be an exciting few months of competition. This season features new teams from local high schools and returning champions looking to defend their titles. Our opening ceremony will be held on May 15th at the main field, with exhibition matches to follow.",
-    image: "/lovable-uploads/cywood.jpg"
+    content: "The YCPL has recently launched an exciting campaign to broaden its public presence through partnerships with local news outlets. This initiative has already seen success with the publication of an article in the Woodlands Online, a leading news source in The Woodlands, Texas. Furthermore, YCPL's digital presence continues to grow. The Instagram page has seen significant engagement, with posts reaching over 1,300 accounts. These measurable gains demonstrate a commitment to expanding the reach and impact of youth cricket in the Houston area. ",
+    image: "/lovable-uploads/65ace1b5-3c4d-44e2-bf86-1593875883a8.png"
   },
   {
     id: "2",
