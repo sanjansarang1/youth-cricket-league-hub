@@ -21,44 +21,38 @@ const Board = () => {
           {/* Co-Chairman Level */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-center mb-8 text-primary">Executive Leadership</h2>
-            <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {boardMembers
-                  .filter(member => member.role.includes("Co-Chairman"))
-                  .map((member, index) => (
-                    <BoardMemberCard key={index} member={member} featured={true} />
-                  ))}
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {boardMembers
+                .filter(member => member.role.includes("Co-Chairman"))
+                .map((member, index) => (
+                  <BoardMemberCard key={index} member={member} featured={true} />
+                ))}
             </div>
           </div>
 
           {/* Directors Level */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-center mb-8 text-primary">Directors</h2>
-            <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-                {boardMembers
-                  .filter(member => 
-                    member.role.includes("Director") && !member.role.includes("Co-Chairman"))
-                  .map((member, index) => (
-                    <BoardMemberCard key={index} member={member} />
-                  ))}
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {boardMembers
+                .filter(member => 
+                  member.role.includes("Director") && !member.role.includes("Co-Chairman"))
+                .map((member, index) => (
+                  <BoardMemberCard key={index} member={member} />
+                ))}
             </div>
           </div>
 
           {/* Other Team Members */}
           <div>
             <h2 className="text-2xl font-bold text-center mb-8 text-primary">Team Members</h2>
-            <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                {boardMembers
-                  .filter(member => 
-                    !member.role.includes("Director") && !member.role.includes("Co-Chairman"))
-                  .map((member, index) => (
-                    <BoardMemberCard key={index} member={member} />
-                  ))}
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {boardMembers
+                .filter(member => 
+                  !member.role.includes("Director") && !member.role.includes("Co-Chairman"))
+                .map((member, index) => (
+                  <BoardMemberCard key={index} member={member} />
+                ))}
             </div>
           </div>
         </div>
@@ -78,7 +72,7 @@ const BoardMemberCard = ({ member, featured = false }) => {
         </Avatar>
       </div>
       <CardHeader className="py-4">
-        <CardTitle className="text-center text-lg">{member.name}</CardTitle>
+        <CardTitle className={`text-center ${featured ? 'text-xl' : 'text-lg'}`}>{member.name}</CardTitle>
       </CardHeader>
       <CardContent className="text-center pb-6">
         <p className={`text-gray-600 ${featured ? 'font-semibold' : ''}`}>{member.role}</p>
