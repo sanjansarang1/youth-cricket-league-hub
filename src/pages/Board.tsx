@@ -1,4 +1,3 @@
-
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
@@ -37,7 +36,7 @@ const Board = () => {
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-center mb-8 text-primary">Directors</h2>
             <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 {boardMembers
                   .filter(member => 
                     member.role.includes("Director") && !member.role.includes("Co-Chairman"))
