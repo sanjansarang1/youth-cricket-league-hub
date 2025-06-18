@@ -88,11 +88,6 @@ const boardMembers = [
     photo: "/lovable-uploads/sanjan.png",
   },
   {
-    name: "Ashutosh Sahu",
-    role: "Co-Chairman",
-    photo: "/lovable-uploads/ash.png",
-  },
-  {
     name: "Siddharth Jain",
     role: "Co-Chairman",
     photo: "/lovable-uploads/sid.png",
@@ -109,7 +104,7 @@ const boardMembers = [
   },
   {
     name: "Satvik Maggavi",
-    role: "Director of Fair Play",
+    role: "Director of Fair Play and Equipment",
     photo: "/lovable-uploads/satvik.png",
   },
   {
