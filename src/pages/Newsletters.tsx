@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import {
   Card,
@@ -85,10 +86,10 @@ const Newsletters = () => {
             </AspectRatio>
 
             <CardContent className="flex-grow">
-              <p className={expandedId === newsletter.id ? "" : "line-clamp-4"}>
+              <p className={expandedId === newsletter.id ? "" : "line-clamp-6"}>
                 {newsletter.content}
               </p>
-              {expandedId === newsletter.id && newsletter.linkUrl && (
+              {newsletter.linkUrl && (
                 <a
                   href={newsletter.linkUrl}
                   target="_blank"
