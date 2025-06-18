@@ -1,6 +1,12 @@
-
 import { useState } from "react";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface Newsletter {
@@ -9,6 +15,8 @@ interface Newsletter {
   author: string;
   date: string;
   content: string;
+  linkText?: string;
+  linkUrl?: string;
   image: string;
 }
 
@@ -18,25 +26,30 @@ const newsletters: Newsletter[] = [
     title: "Exposure in the Local Media",
     author: "Krushal Panda, Sanjan Sarang",
     date: "May 5, 2025",
-    content: "The YCPL has recently launched an exciting campaign to broaden its public presence through partnerships with local news outlets. This initiative has already seen success with the publication of an article in the Woodlands Online, a leading news source in The Woodlands, Texas (https://www.woodlandsonline.com/npps/story.cfm?nppage=81431). Furthermore, YCPL's digital presence continues to grow. The Instagram page has seen significant engagement, with posts reaching over 1,300 accounts. These measurable gains demonstrate a commitment to expanding the reach and impact of youth cricket in the Houston area. ",
-    image: "/lovable-uploads/65ace1b5-3c4d-44e2-bf86-1593875883a8.png"
+    content:
+      "The YCPL has recently launched an exciting campaign to broaden its public presence through partnerships with local news outlets. This initiative has already seen success with the publication of an article in the Woodlands Online, a leading news source in The Woodlands, Texas.",
+    linkText: "Read the article on Woodlands Online",
+    linkUrl: "https://www.woodlandsonline.com/npps/story.cfm?nppage=81431",
+    image: "/lovable-uploads/65ace1b5-3c4d-44e2-bf86-1593875883a8.png",
   },
   {
     id: "2",
     title: "Player Development Workshop",
     author: "Coach Patel",
     date: "April 20, 2025",
-    content: "Last weekend's player development workshop was a huge success with over 50 young cricketers in attendance. Professional coaches from around the region led sessions on batting technique, bowling strategy, and fielding skills. The workshop concluded with a Q&A session where players could ask advice about training regimens and match preparation. We're planning additional workshops throughout the summer - stay tuned for dates!",
-    image: "/lovable-uploads/ballers.jpg"
+    content:
+      "Last weekend's player development workshop was a huge success with over 50 young cricketers in attendance. Professional coaches from around the region led sessions on batting technique, bowling strategy, and fielding skills. The workshop concluded with a Q&A session where players could ask advice about training regimens and match preparation. We're planning additional workshops throughout the summer - stay tuned for dates!",
+    image: "/lovable-uploads/ballers.jpg",
   },
   {
     id: "3",
     title: "Community Outreach Program",
     author: "Outreach Committee",
     date: "April 10, 2025",
-    content: "Our community outreach initiative continues to grow, with more schools adopting our cricket curriculum for physical education classes. The YCPL has donated equipment to five local elementary schools this past month, and our volunteer coaches have been visiting weekly to introduce students to the game. We've seen tremendous enthusiasm from students who are experiencing cricket for the first time!",
-    image: "/lovable-uploads/tmhs.jpg"
-  }
+    content:
+      "Our community outreach initiative continues to grow, with more schools adopting our cricket curriculum for physical education classes. The YCPL has donated equipment to five local elementary schools this past month, and our volunteer coaches have been visiting weekly to introduce students to the game. We've seen tremendous enthusiasm from students who are experiencing cricket for the first time!",
+    image: "/lovable-uploads/tmhs.jpg",
+  },
 ];
 
 const Newsletters = () => {
@@ -62,7 +75,7 @@ const Newsletters = () => {
                 By {newsletter.author} | {newsletter.date}
               </CardDescription>
             </CardHeader>
-            
+
             <AspectRatio ratio={16 / 9} className="bg-gray-100 mb-2">
               <img
                 src={newsletter.image}
@@ -70,13 +83,23 @@ const Newsletters = () => {
                 className="object-cover w-full h-full"
               />
             </AspectRatio>
-            
+
             <CardContent className="flex-grow">
               <p className={expandedId === newsletter.id ? "" : "line-clamp-4"}>
                 {newsletter.content}
               </p>
+              {expandedId === newsletter.id && newsletter.linkUrl && (
+                <a
+                  href={newsletter.linkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline mt-2 block"
+                >
+                  {newsletter.linkText}
+                </a>
+              )}
             </CardContent>
-            
+
             <CardFooter className="pt-2 flex justify-end">
               <button
                 onClick={() => toggleExpand(newsletter.id)}
