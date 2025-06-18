@@ -1,3 +1,4 @@
+
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
@@ -22,7 +23,7 @@ const Board = () => {
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-center mb-8 text-primary">Executive Leadership</h2>
             <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {boardMembers
                   .filter(member => member.role.includes("Co-Chairman"))
                   .map((member, index) => (
@@ -78,7 +79,7 @@ const BoardMemberCard = ({ member, featured = false }) => {
         </Avatar>
       </div>
       <CardHeader className="py-4">
-        <CardTitle className={`text-center ${featured ? 'text-xl' : 'text-lg'}`}>{member.name}</CardTitle>
+        <CardTitle className="text-center text-lg">{member.name}</CardTitle>
       </CardHeader>
       <CardContent className="text-center pb-6">
         <p className={`text-gray-600 ${featured ? 'font-semibold' : ''}`}>{member.role}</p>
