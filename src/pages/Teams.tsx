@@ -68,7 +68,7 @@ const teams = [
     name: "Southwest Warriors Cricket Club",
     logo: "/lovable-uploads/slmc.png",
     district: "South Houston Division",
-    zone: "Southwest Houston Area",
+    zone: "Sugarland & Missouri City",
   },
     {
     name: "Cy-Woods Cricket Club",
