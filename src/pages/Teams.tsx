@@ -83,16 +83,16 @@ const teams = [
     zone: "John Cooper School",
   },
   {
+    name: "TWHS Cricket Club",
+    logo: "/lovable-uploads/TWHS.png",
+    district: "North Houston Division",
+    zone: "The Woodlands High School",
+  },
+  {
     name: "Bridgeland Cricket Club",
     logo: "/lovable-uploads/bridgeland.png",
     district: "North Houston Division",
     zone: "Bridgeland High School",
-  },
-    {
-    name: "TWHS Cricket Club",
-    logo: "/lovable-uploads/twhs.png",
-    district: "North Houston Division",
-    zone: "The Woodlands High School",
   },
   {
     name: "Tomball Memorial Cricket Club",
