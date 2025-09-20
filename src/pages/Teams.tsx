@@ -90,7 +90,7 @@ const teams = [
   },
     {
     name: "TWHS Cricket Club",
-    logo: "/lovable-uploads/twhs.png",
+    logo: "public/lovable-uploads/twhs.png",
     district: "North Houston Division",
     zone: "The Woodlands High School",
   },
