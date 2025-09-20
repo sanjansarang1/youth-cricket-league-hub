@@ -100,6 +100,18 @@ const teams = [
     district: "South Houston Division",
     zone: "Sugarland Area",
   },
+    {
+    name: "Cinco Ranch Cricket Club",
+    logo: "/lovable-uploads/crhs.png",
+    district: "South Houston Division",
+    zone: "Cinco Ranch High School",
+  },
+    {
+    name: "Tomball Cricket Club",
+    logo: "/lovable-uploads/ths.png",
+    district: "North Houston Division",
+    zone: "Tomball High School",
+  },
       {
     name: "Obra D. Tompkins HS Cricket Club",
     logo: "/lovable-uploads/oths.png",
