@@ -44,7 +44,7 @@ const teams = [
     name: "Texas Royals",
     logo: "/lovable-uploads/royals_logo.png",
     district: "North Houston Division",
-    zone: "Conroe ISD",
+    zone: "The Woodlands",
   },
   {
     name: "Houston Titans",
@@ -87,6 +87,12 @@ const teams = [
     logo: "/lovable-uploads/bridgeland.png",
     district: "North Houston Division",
     zone: "Bridgeland High School",
+  },
+    {
+    name: "TWHS Cricket Club",
+    logo: "/lovable-uploads/twhs.png",
+    district: "North Houston Division",
+    zone: "The Woodlands High School",
   },
   {
     name: "Tomball Memorial Cricket Club",
