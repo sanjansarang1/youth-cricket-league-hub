@@ -67,8 +67,8 @@ const sponsorLogos = [
 ];
 
 const stats = [
-  { value: 150, label: "Players", suffix: "+" },
-  { value: 12, label: "Teams", suffix: "+" },
+  { value: 175, label: "Players", suffix: "+" },
+  { value: 14, label: "Teams", suffix: "+" },
 ];
 
 const Index = () => {
