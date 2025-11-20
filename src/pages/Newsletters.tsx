@@ -39,17 +39,17 @@ const newsletters: Newsletter[] = [
     author: "Krushal Panda, Sanjan Sarang",
     date: "June 20, 2025",
     content:
-      "Last weekend’s player development workshop brought together YCPL athletes from across North Houston for a focused training camp designed to elevate their cricketing skills and deepen their engagement with the sport. This community-building event gave many of our newer players valuable insight into what it means to play cricket as part of a team, while introducing them to different formats of the game. Participants trained with both leather balls and tape balls in guided sessions that emphasized safety, technique, and confidence. Throughout the workshop, we continued to nurture talent and strengthen the growing YCPL community.",
+      "Last weekend’s player development workshop brought together YCPL athletes from across North Houston for a focused training camp designed to elevate their cricketing skills and deepen their engagement with the sport. This community-building event gave many of our newer players valuable insight into what it means to play cricket as part of a team, while introducing them to different formats of the game. Participants trained with both leather balls and tape balls in guided sessions that emphasized safety, technique, and confidence. Throughout the workshop, we continued to nurture talent and strengthen the growing YCPL community. Player Shown: Arjun Paripelli",
     image: "/lovable-uploads/arjunhardball.jpg",
   },
   {
     id: "3",
     title: "",
     author: "Outreach Committee",
-    date: "April 10, 2025",
+    date: "October 8, 2024",
     content:
-      "Our community outreach initiative continues to grow, with more schools adopting our cricket curriculum for physical education classes. The YCPL has donated equipment to five local elementary schools this past month, and our volunteer coaches have been visiting weekly to introduce students to the game. We've seen tremendous enthusiasm from students who are experiencing cricket for the first time!",
-    image: "/lovable-uploads/tmhs.jpg",
+      "This weekend, YCPL players kicked off a team-building day as athletes from across Houston gathered at our main ground in The Woodlands to focus on endurance and game awareness. Before practice began, the YCPL board met to discuss upcoming growth initiatives, setting the tone for a productive and forward-looking session. Players then moved into group drills, including sprint relays, catching circuits, and footwork exercises designed to improve match-day coordination and overall conditioning. Between sessions, new and returning players connected with teammates from all over Houston, strengthening the camaraderie that makes the YCPL community so unique. More development days are already in the works as we continue to elevate youth cricket throughout Houston.",
+    image: "/lovable-uploads/camp.jpg",
   },
 ];
 
