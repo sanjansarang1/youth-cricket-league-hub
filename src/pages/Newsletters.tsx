@@ -35,16 +35,16 @@ const newsletters: Newsletter[] = [
   },
   {
     id: "2",
-    title: "Player Development Workshop",
-    author: "Coach Patel",
-    date: "April 20, 2025",
+    title: "North Houston YCPL Development Workshop",
+    author: "Krushal Panda, Sanjan Sarang",
+    date: "June 20, 2025",
     content:
-      "Last weekend's player development workshop was a huge success with over 50 young cricketers in attendance. Professional coaches from around the region led sessions on batting technique, bowling strategy, and fielding skills. The workshop concluded with a Q&A session where players could ask advice about training regimens and match preparation. We're planning additional workshops throughout the summer - stay tuned for dates!",
-    image: "/lovable-uploads/ballers.jpg",
+      "Last weekend’s player development workshop brought together YCPL athletes from across North Houston for a focused training camp designed to elevate their cricketing skills and deepen their engagement with the sport. This community-building event gave many of our newer players valuable insight into what it means to play cricket as part of a team, while introducing them to different formats of the game. Participants trained with both leather balls and tape balls in guided sessions that emphasized safety, technique, and confidence. Throughout the workshop, we continued to nurture talent and strengthen the growing YCPL community.",
+    image: "/lovable-uploads/arjunhardball.jpg",
   },
   {
     id: "3",
-    title: "Community Outreach Program",
+    title: "",
     author: "Outreach Committee",
     date: "April 10, 2025",
     content:
