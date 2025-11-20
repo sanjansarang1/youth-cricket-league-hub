@@ -44,8 +44,8 @@ const newsletters: Newsletter[] = [
   },
   {
     id: "3",
-    title: "",
-    author: "Outreach Committee",
+    title: "Inaugural Team-Building Day",
+    author: "Krushal Panda, Sanjan Sarang",
     date: "October 8, 2024",
     content:
       "This weekend, YCPL players kicked off a team-building day as athletes from across Houston gathered at our main ground in The Woodlands to focus on endurance and game awareness. Before practice began, the YCPL board met to discuss upcoming growth initiatives, setting the tone for a productive and forward-looking session. Players then moved into group drills, including sprint relays, catching circuits, and footwork exercises designed to improve match-day coordination and overall conditioning. Between sessions, new and returning players connected with teammates from all over Houston, strengthening the camaraderie that makes the YCPL community so unique. More development days are already in the works as we continue to elevate youth cricket throughout Houston.",
