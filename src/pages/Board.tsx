@@ -83,54 +83,24 @@ const BoardMemberCard = ({ member, featured = false }) => {
 
 const boardMembers = [
   {
-    name: "Sanjan Sarang",
-    role: "Co-Chairman",
-    photo: "/lovable-uploads/sanjan.png",
-  },
-  {
-    name: "Siddharth Jain",
-    role: "Co-Chairman",
-    photo: "/lovable-uploads/sid.png",
-  },
-  {
-    name: "Aryan Khandelwal",
-    role: "Director of Competition",
-    photo: "/lovable-uploads/aryan.png",
-  },
-  {
-    name: "Krushal Panda",
-    role: "Director of Outreach",
-    photo: "/lovable-uploads/krushal.png",
-  },
-  {
     name: "Satvik Maggavi",
-    role: "Director of Fair Play and Equipment",
+    role: "Co-President",
     photo: "/lovable-uploads/satvik.png",
   },
   {
-    name: "Uvanuv Vishnu",
-    role: "Outreach Team",
-    photo: "/lovable-uploads/uvanuv.png",
+    name: "Krushal Panda",
+    role: "Co-President",
+    photo: "/lovable-uploads/krushal.png",
   },
   {
-    name: "Aarish Handa",
-    role: "Outreach Team",
-    photo: "/lovable-uploads/aarish.png",
+    name: "Vidipsai Pitta",
+    role: "Vice President of Outreach",
+    photo: "/lovable-uploads/vsai.png",
   },
   {
-    name: "Saikarthik Swaminathan",
-    role: "Outreach Team",
-    photo: "/lovable-uploads/sai.png",
-  },
-  {
-    name: "Deva Harsha Tanneru",
-    role: "North Houston Division Director",
-    photo: "/lovable-uploads/deva.png",
-  },
-  {
-    name: "Chinmay Shastri",
-    role: "South Houston Division Director",
-    photo: "/lovable-uploads/chinmay.png",
+    name: "Arjun Paripelli",
+    role: "Vice President of Competition",
+    photo: "/lovable-uploads/arjun.png",
   },
 ];
 
