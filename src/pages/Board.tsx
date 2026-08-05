@@ -1,6 +1,5 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ChevronDown } from "lucide-react";
 
 const Board = () => {
   return (
@@ -18,38 +17,24 @@ const Board = () => {
       {/* Board Members Hierarchy */}
       <div className="py-16">
         <div className="container mx-auto px-4">
-          {/* Co-Chairman Level */}
+          {/* Co-President Level */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-center mb-8 text-primary">Executive Leadership</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {boardMembers
-                .filter(member => member.role.includes("Co-Chairman"))
+                .filter(member => member.role.includes("Co-President"))
                 .map((member, index) => (
                   <BoardMemberCard key={index} member={member} featured={true} />
                 ))}
             </div>
           </div>
 
-          {/* Directors Level */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-center mb-8 text-primary">Directors</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {boardMembers
-                .filter(member => 
-                  member.role.includes("Director") && !member.role.includes("Co-Chairman"))
-                .map((member, index) => (
-                  <BoardMemberCard key={index} member={member} />
-                ))}
-            </div>
-          </div>
-
-          {/* Other Team Members */}
+          {/* Vice President Level */}
           <div>
-            <h2 className="text-2xl font-bold text-center mb-8 text-primary">Team Members</h2>
+            <h2 className="text-2xl font-bold text-center mb-8 text-primary">Vice Presidents</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {boardMembers
-                .filter(member => 
-                  !member.role.includes("Director") && !member.role.includes("Co-Chairman"))
+                .filter(member => member.role.includes("Vice President"))
                 .map((member, index) => (
                   <BoardMemberCard key={index} member={member} />
                 ))}
